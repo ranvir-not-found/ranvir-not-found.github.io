@@ -68,7 +68,7 @@
 
         {% if site.orcid %}
         <a style="margin: 0 5px 0 0" href="{{ site.orcid }}" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile">
-          <i class="ai ai-orcid" style="font-size:1.35rem;"></i>
+          <i class="ai ai-orcid" style="font-size:1.32rem;"></i>
         </a>
         {% endif %}
    
@@ -95,6 +95,13 @@
           <i class="fab fa-goodreads"></i>
         </a>
         {% endif %}
+       
+        {% if site.huggingface %}
+        <a style="margin: 0 5px 0 0" href="{{ site.huggingface }}" target="_blank" rel="noopener noreferrer" aria-label="Hugging Face profile">
+          <img src="{{ '/assets/img/hf-logo.svg' | relative_url }}" alt="Hugging Face" style="height:1.3rem; vertical-align:middle; width:auto;">
+        </a>
+        {% endif %}
+       
         </div>
         <br>
 
