@@ -97,8 +97,14 @@
         {% endif %}
        
         {% if site.huggingface %}
-        <a style="margin: 0 5px 0 0" href="{{ site.huggingface }}" target="_blank">
-          <i class="ai ai-huggingface" style="font-size:1.3rem;"></i>
+        <a style="margin: 0 5px 0 0" href="{{ site.huggingface }}" target="_blank" rel="noopener noreferrer">
+          <svg style="width:1.3rem; height:1.3rem; vertical-align:middle; fill:currentColor;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 24c6.627 0 12-5.373 12-12S18.627 0 12 0 0 5.373 0 12s5.373 12 12 12z" fill="#FFD21E"/>
+            <path d="M12 5.5c-.6 0-1.1.1-1.5.4-.1.1-.3.2-.4.3-.4.3-.7.8-.8 1.3-.1.4-.1.8-.1 1.2 0 .5.1 1 .3 1.4.1.2.2.4.3.6.2.3.4.5.7.7.3.2.7.4 1 .5.4.1.9.1 1.3 0 .4-.1.8-.3 1.1-.5.3-.2.5-.5.7-.8.2-.3.4-.6.5-.9.1-.3.2-.6.2-1 0-.4 0-.8-.1-1.1-.1-.5-.4-.9-.8-1.2-.1-.1-.2-.2-.4-.3-.4-.2-.9-.4-1.4-.4z" fill="#000"/>
+            <circle cx="9.5" cy="11.5" r="1.2" fill="#000"/>
+            <circle cx="14.5" cy="11.5" r="1.2" fill="#000"/>
+            <path d="M12 16c-1.5 0-2.8-.8-3.5-2h7c-.7 1.2-2 2-3.5 2z" fill="#000"/>
+          </svg>
         </a>
         {% endif %}
        
